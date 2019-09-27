@@ -1,25 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
+import Table from './Table'
 import './App.css';
 
 function App() {
+  const defaultProp = {
+    initalWidth: 4,
+    initalHeight: 4,
+    size :50
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Table defaultProp = {defaultProp}/>
   );
 }
 
